@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Horizontal and Vertical Centering - Flexbox</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .flex-container {
+            height: inherit;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .flex-item {
+            /* fix: flex item is bigger than the flex container */
+            /* @link-doc: https://stackoverflow.com/a/33455342/9370788 */
+            margin: auto;
+            /* endFix */
+            width: 50%;
+            padding: 30px;
+            border: 1px solid #E7E7E7;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="flex-container">
+        <div id="app" class="flex-item">
+            <h1>CSS Horizontal and Vertical Centering - Flexbox</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestias dolorum itaque excepturi vero
+                cumque omnis ex ut minima enim illum consectetur, voluptates blanditiis corrupti. Voluptates excepturi
+                voluptatibus necessitatibus quia.</p>
+        </div>
+    </main>
+</body>
+
+</html>
