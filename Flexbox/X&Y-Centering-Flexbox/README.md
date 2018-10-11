@@ -24,6 +24,3 @@ html, body{
 }
 ````
 otherwise there will be no vertical centering because of height reference lack...
-
-
-
